@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма кредитної картки</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card-form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 320px;
+    }
+
+    .card-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .card-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .card-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .card-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3498db;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .card-form button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="card-form">
+    <h2>Дані кредитної картки</h2>
+
+    <label for="card-number">Номер картки</label>
+    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+
+    <label for="card-name">Ім’я власника</label>
+    <input type="text" id="card-name" name="card-name" placeholder="Ім’я Прізвище" required>
+
+    <label for="expiry">Термін дії</label>
+    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+    <label for="cvv">CVV / CVN</label>
+    <input type="password" id="cvv" name="cvv" placeholder="123" required>
+
+    <button type="submit">Оплатити</button>
+  </form>
+
+</body>
+</html>
